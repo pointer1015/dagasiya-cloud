@@ -18,10 +18,6 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.pointer</groupId>
-            <artifactId>dagasiya-common</artifactId>
-            <version>1.0</version>
-        </dependency>
+
     </dependencies>
 </project>
