@@ -43,6 +43,8 @@ public class UserAppServiceImpl implements UserAppService {
         user.setStatus(1);
         user.setRegisterTime(new Date());
         user.setDeleted(0);
+        // 默认为普通用户
+        user.setUserType(1);
         userAppMapper.addUser(user);
 
         return Result.success(null);
@@ -79,6 +81,7 @@ public class UserAppServiceImpl implements UserAppService {
         userProfileDTO.setEmail(loginDTO.getEmail());
         userProfileDTO.setPhone(user.getPhone());
         userProfileDTO.setStatus(user.getStatus());
+        userProfileDTO.setUserType(user.getUserType());
         userProfileDTO.setRegisterTime(user.getRegisterTime());
         userProfileDTO.setLastLoginTime(user.getLastLoginTime());
 
