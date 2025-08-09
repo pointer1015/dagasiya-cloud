@@ -9,6 +9,7 @@ CREATE TABLE `user` (
   `phone`          VARCHAR(32)  NULL,
   `email`          VARCHAR(64)  NULL,
   `status`         TINYINT      NOT NULL DEFAULT 1,
+  `user_type`      TINYINT      NOT NULL DEFAULT 1 COMMENT '用户类型：1-普通用户，2-管理员',
   `register_time`  DATETIME     NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `last_login_time` DATETIME    NULL,
   `update_time`    DATETIME     NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP,
