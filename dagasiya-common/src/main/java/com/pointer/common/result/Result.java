@@ -38,7 +38,7 @@ public class Result<T> {
 
     }
 
-    public static <T> Result<T> build(T data, Integer code, String message) {
+    public static<T> Result<T> build(T data, Integer code, String message) {
         Result<T> result = new Result<>();
         if (data != null) {
             result.setData(data);
