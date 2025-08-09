@@ -11,12 +11,17 @@ public enum ResultCodeEnum {
     ILLEGAL_REQUEST(205, "非法请求"),
     REPEAT_SUBMIT(206, "重复提交"),
 
+    EMAIL_INVALID(207, "邮箱格式不正确"),
     LOGIN_AUTH(208, "未登陆"),
     PERMISSION(209, "没有权限"),
 
-    ORDER_PRICE_ERROR(210, "订单商品价格变化"),
-    ORDER_STOCK_FALL(204, "订单库存锁定失败"),
+//    ORDER_PRICE_ERROR(210, "订单商品价格变化"),
+//    ORDER_STOCK_FALL(204, "订单库存锁定失败"),
     CREATE_ORDER_FAIL(210, "创建订单失败"),
+
+    USER_NOT_EXIST(211,"用户不存在"),
+    PASSWORD_ERROR(212,"密码错误"),
+    USER_DISABLE(213,"用户被禁用"),
 
 
     FETCH_USERINFO_ERROR( 219, "获取用户信息失败"),
