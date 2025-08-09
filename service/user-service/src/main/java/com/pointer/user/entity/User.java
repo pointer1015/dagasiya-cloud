@@ -27,6 +27,9 @@ public class User {
     @Schema(description = "状态：0-禁用，1-启用")
     private Integer status;
 
+    @Schema(description = "用户类型：1-普通用户，2-管理员")
+    private Integer userType;
+
     @Schema(description = "注册时间")
     private Date registerTime;
 
